@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="media/logo-NB.png" alt="Matcha Leaf" class="leaf-icon">
+            </div>
+            
+            <nav class="myNavbar">
+                <ul>
+                    <li><a href="index.html" class="nav-link  ">Home</a></li>
+                    <li><a href="menu.html" class="nav-link ">Our Menu</a></li>
+                    <li><a href="MakeReservation.html" class="nav-link">Make Reservation</a></li>
+                    <li><a href="contactUs.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+    
+           
+        </div>
+    
+
+    </header>
+    
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text"  id="name" placeholder="Enter your full name" required>
+
+            <label for="message">Message:</label>
+            <textarea  type="text-area" rows="5" placeholder="Type your message" id="message" required> </textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter an email" required>
+
+
+            <button type="submit">Contact Us</button>
+        </form>
+    </section>
+
+    
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col logo-col">
+                <img src="media/logo-NB.png" alt="Matcha and More" class="footer-logo">
+                <p>Experience authentic matcha in abu dhabi</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="MakeReservation.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>  Matcha and More Cafe Abu Dhabi</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+971-701-1234">+971-701-1234</a></li>
+                    <li><i class="far fa-envelope"></i> <a href="mailto:info@matchaandmore.com">info@matchaandmore.com</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+        alert("Message sent Successfully...");
+   
+});
+    </script>
+</body>
+</html>

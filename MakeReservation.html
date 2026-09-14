@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make Reservation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="media/logo-NB.png" alt="Matcha Leaf" class="leaf-icon">
+                </div>
+                
+                <nav class="myNavbar">
+                    <ul>
+                        <li><a href="index.html" class="nav-link ">Home</a></li>
+                        <li><a href="menu.html" class="nav-link">Our Menu</a></li>
+                        <li><a href="MakeReservation.html" class="nav-link active">Make Reservation</a></li>
+                        <li><a href="contactUs.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+        
+          
+            </div>
+        
+        </header>
+
+    <main>
+        <section class="our-banner">
+            <img src="media/reservation-banner.png" alt="reservation banner">
+        </section>
+        <section style="width: 90%; overflow: hidden; padding: 2rem;">
+            <div style="width: 45%; float: left; padding-right: 2rem;">
+                <h2>Make a Reservation</h2>
+                <form id="myForm" style="width: 100%;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+        
+                    <label for="noOfPersons">Number Of Persons:</label>
+                    <input type="number" id="noOfPersons" placeholder="how many persons you are ?" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="abc@gmail.com" required>
+        
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                    
+                    <label for="time">Time :</label>
+                    <input type="time" id="time" name="time" required>
+        
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+            <div style="width: 45%; float: right; text-align: right;">
+                <img src="media/Menu.png" alt="ourmenu" style="max-width: 90%; height: auto;">
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col logo-col">
+                <img src="media/logo-NB.png" alt="Matcha and More" class="footer-logo">
+                <p>Experience authentic matcha in abu dhabi</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="MakeReservation.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>  Matcha and More Cafe Abu Dhabi</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+971-701-1234">+971-701-1234</a></li>
+                    <li><i class="far fa-envelope"></i> <a href="mailto:info@matchaandmore.com">info@matchaandmore.com</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+        alert("Booked Successfully...");
+   
+});
+    </script>
+</body>
+</html>
